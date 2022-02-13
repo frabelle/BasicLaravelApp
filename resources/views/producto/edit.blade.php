@@ -4,7 +4,7 @@
 
 <div class="row py-2">
     <div class="col-6">
-        <h2><b>Registrando un Producto</b></h2>
+        <h2><b>Editando un Producto</b></h2>
     </div>
     <div class="col-6">
         <div style="text-align: right;">

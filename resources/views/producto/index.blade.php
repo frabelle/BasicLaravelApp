@@ -30,7 +30,7 @@
                 <th>Categoría</th>
                 <th>Existencias</th>
                 <th>Precio</th>
-                <th width="20%">Opciones</th>
+                <th width="18%">Opciones</th>
             </tr>
     </thead>
         <tbody>
