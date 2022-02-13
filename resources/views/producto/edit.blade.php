@@ -24,6 +24,8 @@
     <div class="form-row">
         <div class="col-md-12" >
 
+            <input type="hidden" name="id" id="id" value="{{$producto->id}}">
+
             <div class="row">
 
                 <div class="col">
@@ -65,7 +67,7 @@
                 <div class="row" style="text-align: center;">
 
                     <div class="col-md-6">
-                        <input class="btn btn-primary btn-block col-md-12" type="submit" value="Registrar nueva moneda"/>
+                        <input class="btn btn-primary btn-block col-md-12" type="submit" value="Guardar cambios de producto"/>
                     </div>
 
                     <div class="col-md-6">

@@ -27,8 +27,8 @@
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Existencias</th>
                 <th>Categoría</th>
+                <th>Existencias</th>
                 <th>Precio</th>
                 <th width="20%">Opciones</th>
             </tr>
@@ -42,7 +42,15 @@
                     <td>{{$producto->categoria}}</td>
                     <td>{{$producto->existencias}}</td>
                     <td>{{$producto->precio}}</td>
-                    <td></td>
+                    <td>
+                        <form action="{{ route('productos.destroy', $producto->id)}}" method="POST">
+                            <a href="/productos/{{$producto->id}}/edit" class="btn btn-sm btn-outline-primary">Editar</a>
+                            @csrf
+                            @method('DELETE');
+                            <button type="submit" class="btn btn-sm btn-danger">Borrar</button>
+                        </form>
+
+                    </td>
                 </tr>
             @endforeach
 

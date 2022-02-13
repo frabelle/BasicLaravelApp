@@ -26,7 +26,7 @@ class ProductosController extends Controller
         $productos -> precio = $request -> get('precio');
         $productos -> save();
 
-        return view('home');
+        return redirect('/home');
     }
 
     public function edit($id){
@@ -44,14 +44,14 @@ class ProductosController extends Controller
         $productos -> precio = $request -> get('precio');
         $productos -> save();
 
-        return view('home');
+        return redirect('/home');
     }
 
     public function destroy($id){
         $producto = Producto::find($id);
-        $producto -> delete;
+        $producto -> delete();
 
-        return view('home');
+        return redirect('/home');
     }
 
 
